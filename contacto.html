@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagenes/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="formulario.js"></script>
+    <title>Física para todos</title>
+</head>
+<body>
+
+    <header>
+        <div class="title-area">  
+            <a href="index.html"> <img src="imagenes/logo tp.png" alt="Logo Física para todos" height="150vh" width="150vw"> </a>  
+        </div>
+
+        <div id="navigation">
+            <nav>
+                <ul class="nav">
+                    <li class="lista-nav"> <a href="#">Registro</a> </li>
+                    <li class="lista-nav"> <a href="diccionario.html">Diccionario</a> </li>
+                    <li class="lista-nav"> <a href="#">Temas</a> </li>
+                    <li class="lista-nav"> <a href="#">Foros</a> </li>
+                    <li class="lista-nav"> <a href="#">Noticias</a> </li>
+                    <li class="lista-nav"> <a href="#">Problemas</a> </li>
+                    <li class="lista-nav"> <a href="#">Iniciar sesión</a> </li>
+                </ul>
+            </nav>
+        </div>
+</header>
+
+
+    <main>
+        <section class="section-contacto">
+            <h1 id="contacto"> ¿Tenés alguna duda o sugerencia? ¡Escribinos! </h1>
+        </section>
+        <div class="contenedor-contacto">
+            <section class="formulario-contacto">
+            <form id="formulario" method="post">
+
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                </div>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" size="20" maxlength="8" required autocomplete="off">
+
+            <div class="mail">
+                <label for="mail"> Correo
+                    <input type="email" name="mail" id="mail" placeholder="Ingrese su correo electrónico" size="25" required></label>
+            </div>
+
+            <div class="mensaje">
+                <label for="text">Mensaje</label>
+            </div>
+            <textarea name="comentario" id="comentario" rows="10" cols="40" ></textarea>
+
+            <div class="enviar">
+                <input id="enviar" type="submit" value="Enviar">
+            </div>
+            
+            </form>
+            </section>
+
+            <section class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TTHazQeM8v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer1">
+
+        <div class="textfooter">
+            <section class="text1">
+                <div class="parrafo_izq">
+                    <div class="titulo_izq"> <h2>Diccionario</h2> </div>
+                     <div class="lista1">
+                         <ul>
+                             <li class="lista1_item"> <a href="diccionario.html"> Mecánica clásica </a> </li>
+                             <li class="lista1_item"> <a href="diccionario.html">Electromagnetismo</a> </li>
+                             <li class="lista1_item"> <a href="diccionario.html">Mecánica cuántica</a> </li>
+                         </ul>
+                     </div>
+                 </div>
+     
+                 <div class="parrafo_centro">
+                     <div class="titulo_centro"> <h2>Contenidos</h2> </div>
+                     <div class="lista2">
+                         <ul>
+                             <li class="lista2_item"> <a href="noticias.html"> Noticias </a> </li>
+                             <li class="lista2_item"> <a href="problemas.html"> Problemas </a> </li>
+                             <li class="lista2_item"> <a href="foros.html"> Foros </a> </li>
+                         </ul>
+                     </div>
+                 </div>
+     
+                 <div class="parrafo_dcha">
+                     <div class="titulo_dcha"> <h2>Sobre Nosotros</h2> </div>
+                     <div>
+                         <ul class="lista3">
+                             <li class="lista3_item"> <a href="fpt.html"> ¿Qué es Física para todos? </a> </li>
+                             <li class="lista3_item"> <a href="nosotros.html"> ¿Quiénes somos? </a> </li>
+                             <li class="lista3_item"> <a href="contacto.html"> Contacto </a> </li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+           
+
+            <div class="footersocial">
+                <div id="redes"> <p>Seguinos en redes sociales</p> </div>
+                <ul>
+                    <li class="footersocial-i" id="facebook">  <a href="https://www.facebook.com/" target="_blank"> <i class='bx bxl-facebook bx-md' aria-hidden="true" ></i> </a>  </li>
+                    <li class="footersocial-i" id="instagram"> <a href="https://www.instagram.com/" target="_blank"> <i class='bx bxl-instagram bx-md' aria-hidden="true"></i> </a> </li>
+                    <li class="footersocial-i" id="twitter"> <a href="https://twitter.com/" target="_blank"> <i class='bx bxl-twitter bx-md' aria-hidden="true"></i> </a> </li>
+                </ul> 
+            </div>
+
+            <div class="site-footer">
+                <nav class="nav2">
+                    <ul>
+                        <li class="textnav2"> <a href="#">Ayuda</a></li>
+                        <li class="textnav2"> <a href="#">Aviso legal</a></li>
+                        <li class="textnav2"> <a href="#">Cookies</a></li>
+                        <li class="textnav2"> <a href="#">Privacidad</a></li>
+                        <li class="textnav2"> <a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </nav>
+                <p id="copyright"> Copyright ©2022 <a href="index.html"> Física para todos </a> </p>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
