@@ -9,10 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Amatic+SC&family=Architects+Daughter&family=Cinzel&family=EB+Garamond&family=Handlee&family=Indie+Flower&family=Kalam:wght@300&family=Quicksand:wght@300&family=Shadows+Into+Light&family=Tillana&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="formulario.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos2.css">
     <link rel="stylesheet" href="css/celular.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/compu.css">
@@ -24,7 +21,7 @@
         function ocultar (n) {
             document.getElementById("sub-menu1").style.display="none";
         }
-    </script>
+        </script>
 </head>
 <body>
     <header>
@@ -74,39 +71,82 @@
 
     <main>
         <section>
-            <h1 id="contacto"> Contacto </h1>
-            <h3 id="contacto-mensaje"> ¿Tenés alguna duda o sugerencia? ¡Escribinos! </h3>
-        </section>
-
-        <section>
-            <div class="contenedor-contacto">
-                <div class="formulario-contacto">
-                    <form id="formulario" method="post">
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre completo">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej.: tumail@ejemplo.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput3" class="form-label"> Mensaje </label>
-                            <textarea type="text" class="form-control" id="formGroupExampleInput3" cols="30" rows="5"></textarea>
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
+            <h1 id="title-problems">Colección de problemas</h1>
+            <div class="text-problemas">
+                <div class="img-ejercicios-p">
+                    <img id="img-resumen" src="imagenes/ejercicios.jpg" alt="Ecuaciones" width="600vw">
                 </div>
-
-                <div class="video">
-                    <iframe width="560" height="315" id="video-fisica" src="https://www.youtube.com/embed/TTHazQeM8v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="p-problems-container">
+                    <p class="p-problems"> Resolver problemas es fundamental en el estudio de las ciencias, ya que es la única forma de poner a prueba los conocimientos teóricos adquiridos y, muchas veces, la única forma de evaluarlos. </p>
+                    <p class="p-problems"> A continuación, te dejamos una colección de problemas para que practiques todo lo aprendido. Los problemas se dividen en diferentes categorías, según la rama de la física a la que corresponden. </p>
+                    <p class="p-problems"> La solución paso a paso de cada problema se encuentra justo al final de la consigna. También podés ver todas las respuestas haciendo click en el siguiente enlace: <a href="problemas.html">Soluciones</a>. De todas formas te recomendamos que intentes resolver los problemas vos mismo antes de ver la solución. ¡Éxitos! </p>
                 </div>
             </div>
         </section>
+        
+        <section class="categorias">
+            <div>
+                <h3 id="titulo-categ"> Categorías </h3>
+            </div>
+            <div>
+                <ul id="lista-categorias">
+                    <li> <a class="categ-item" href="#seccion1-pr">Mecánica clásica</a> </li>
+                    <li> <a class="categ-item" href="#seccion2-pr">Electromagnetismo</a> </li>
+                    <li> <a class="categ-item" href="#seccion3-pr">Mecánica cuántica</a> </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="seccion1-pr">
+            <h4 class="titulo-categ-pr"> Mecánica clásica: Problemas de gravitación universal </h4>
+            <p class="pfo-seccion1-pr"> La teoría de la Relatividad General predice pequeñas correcciones de la ley de la gravitación universal de Newton. Para un planeta de masa <i>m</i> viajando a una velocidad <i>v</i> en una órbita de radio <i>r</i>, la expresión para la fuerza modificada se puede escribir como:</p>
+            <div class="img-seccion1-pr">
+                <img src="imagenes/ejercicios ecuaciones/75_afd9653f42f45d9019404bbffa87bbad.png">
+            </div>
+            <p class="pfo-seccion1-pr"> donde <i>c</i> es la velocidad de la luz y <img src="imagenes/ejercicios ecuaciones/2.png">. </p>
+            <p class="pfo-seccion1-pr" >1.Encontrar que el período se puede escribir: </p>
+            <div class="img-seccion1-pr">
+                <img src="imagenes/ejercicios ecuaciones/3.png">
+            </div>
+            <p class="pfo-seccion1-pr" >2.Mostrar que en cada revolución el planeta avanza un ángulo respecto al caso Newtoniano:</p>
+            <div class="img-seccion1-pr">
+                <img src="imagenes/ejercicios ecuaciones/4.png">
+            </div>
+            <p class="pfo-seccion1-pr" >3.Aplicar estos resultados a Mercurio y verificar que el avance acumulado de la órbita después de un siglo es de cerca de 43" de arco. Para el planeta Mercurio: <img src="imagenes/ejercicios ecuaciones/5.png"> (donde ua = unidad astronómica = radio de la órbita terrestre). <a href="problemas.html">SOLUCIÓN</a></p>
+        </section>
+
+
+        <section id="seccion2-pr">
+            <h4 class="titulo-categ-pr"> Electromagnetismo: Problemas de campo eléctrico estático </h4>
+            <p class="pfo-seccion2-pr"> Un protón se encuentra situado en el origen de coordenadas del plano XY. Un electrón, inicialmente en reposo, está situado en el punto (2,0). Por efecto del campo eléctrico creado por el protón (supuesto inmóvil), el electrón se acelera. Estando todas las coordenadas expresadas en <img src="imagenes/ejercicios ecuaciones/1.2.png">, calcule:</p>
+            <p class="pfo-seccion2-pr">1.El campo eléctrico y el potencial creado por el protón en el punto (2,0). </p>
+            <p class="pfo-seccion2-pr" >2.La energía cinética del electrón cuando se encuentra en el punto (1,0). </p>
+            <p class="pfo-seccion2-pr" >3.La velocidad y momento lineal del electrón en la posición (1,0). </p>
+            <p class="pfo-seccion2-pr" >4.La longitud de onda de De Broglie asociada al electrón en el punto (1,0).</p>
+            <p class="pfo-seccion2-pr" ><strong>Datos:</strong> Constante de la ley de Couloumb <img src="imagenes/ejercicios ecuaciones/1.3.png">, carga del electrón (valor absoluto) <img src="imagenes/ejercicios ecuaciones/1.4.png">, masa del electrón <img src="imagenes/ejercicios ecuaciones/1.5.png">, constante de Planck <img src="imagenes/ejercicios ecuaciones/1.6.png">. <a href="problemas.html">SOLUCIÓN</a> </p>
+        </section>
+
+
+        <section id="seccion3-pr">
+            <h4 class="titulo-categ-pr"> Mecánica cuántica </h4>
+            <p class="pfo-seccion3-pr">Un oscilador armónico se encuentra inicialmente en el estado:</p>
+            <div class="img-seccion3-pr">
+                <img src="imagenes/ejercicios ecuaciones/2.1.png">
+            </div>
+            <p class="pfo-seccion3-pr">en donde <img src="imagenes/ejercicios ecuaciones/2.2.png"> son los vectores propios del hamiltoniano. Demuestra que el valor medio de la posición evoluciona con el tiempo de acuerdo a: </p>
+            <div class="img-seccion3-pr">
+                <img src="imagenes/ejercicios ecuaciones/2.3.png">
+            </div>
+            <p class="pfo-seccion3-pr">siendo <img src="imagenes/ejercicios ecuaciones/2.4.png"> la fase de <img src="imagenes/ejercicios ecuaciones/2.5.png">. <a href="problemas.html">SOLUCIÓN</a></p>
+        </section>
+
+        <section id="img-fisica1-container">
+            <img id="img-fisica1" src="imagenes/fisica1.jpg" alt="Ecuaciones">
+        </section>
+
     </main>
-    
+
+
     <footer class="footer1">
 
         <div class="textfooter">
@@ -126,9 +166,9 @@
                      <div class="titulo_centro"> <h2>Contenidos</h2> </div>
                      <div class="lista2">
                          <ul>
-                             <li class="lista2_item"> <a href="noticias.html"> Noticias </a> </li>
+                             <li class="lista2_item"> <a href="#"> Noticias </a> </li>
                              <li class="lista2_item"> <a href="problemas.html"> Problemas </a> </li>
-                             <li class="lista2_item"> <a href="foros.html"> Foros </a> </li>
+                             <li class="lista2_item"> <a href="#"> Foros </a> </li>
                          </ul>
                      </div>
                  </div>
@@ -137,8 +177,8 @@
                      <div class="titulo_dcha"> <h2>Sobre Nosotros</h2> </div>
                      <div>
                          <ul class="lista3">
-                             <li class="lista3_item"> <a href="fpt.html"> ¿Qué es Física para todos? </a> </li>
-                             <li class="lista3_item"> <a href="nosotros.html"> ¿Quiénes somos? </a> </li>
+                             <li class="lista3_item"> <a href="#"> ¿Qué es Física para todos? </a> </li>
+                             <li class="lista3_item"> <a href="#"> ¿Quiénes somos? </a> </li>
                              <li class="lista3_item"> <a href="contacto.html"> Contacto </a> </li>
                          </ul>
                      </div>
@@ -148,7 +188,7 @@
 
             <div class="footersocial">
                 <div id="redes"> <p>¡Seguinos en redes sociales!</p> </div>
-                <ul id="icons-redes">
+                <ul>
                     <li class="footersocial-i" id="facebook">  <a href="https://www.facebook.com/" target="_blank"> <i class='bx bxl-facebook bx-md' aria-hidden="true" ></i> </a>  </li>
                     <li class="footersocial-i" id="instagram"> <a href="https://www.instagram.com/" target="_blank"> <i class='bx bxl-instagram bx-md' aria-hidden="true"></i> </a> </li>
                     <li class="footersocial-i" id="twitter"> <a href="https://twitter.com/" target="_blank"> <i class='bx bxl-twitter bx-md' aria-hidden="true"></i> </a> </li>
@@ -170,6 +210,6 @@
 
         </div>
     </footer>
-    
+
 </body>
 </html>

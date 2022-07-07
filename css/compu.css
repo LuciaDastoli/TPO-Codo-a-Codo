@@ -1,0 +1,103 @@
+@media only screen and (min-width: 986px) {
+    header{
+        background-color: white;
+        width: 100%;
+        /* position: sticky; */
+        top: 0px;
+    }
+
+    #img-logo{
+        height: 14em;
+        width: 14em;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-items{
+        width: 100%;
+        background-image: none;
+        border: none;
+        border-bottom: 0;
+    }
+
+    #nav-items ul{
+        flex-wrap: nowrap !important;
+    }
+    
+    .title-area{
+        padding: 1em;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    #nav-items{
+        padding: 1em;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    .nav1{
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+    
+    .nav2{
+        list-style-type: none;
+        font-size: 1.5em;
+        justify-content: center;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+    
+    .lista-nav{
+        display: list-item;
+        text-decoration: none;
+        padding: 1em;
+        margin-top: 0% !important;
+        width: fit-content;
+    }
+
+    #sub-menu1{
+        visibility: visible;
+    }
+
+    .bx-menu{
+        display: none;
+    }
+
+    .bx-x{
+        display: none;
+    }
+
+    #nav-principal{
+        display: block;
+    }
+
+    .img-ejercicios-p{
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        grid-column: 1/2;
+    }
+
+    #img-resumen{
+        width: 45vw;
+    }
+
+    #p-problems-container{
+        grid-column: 2/4;
+    }
+
+    #fisica{
+        display: block;
+    }
+    
+    #seccion-texto-fisica-2{
+        display: none;
+    }
+}
+

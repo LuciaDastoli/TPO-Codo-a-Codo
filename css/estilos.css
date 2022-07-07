@@ -5,28 +5,83 @@
 
 header{
     background-color: white;
+    width: 100%;
+    /* position: sticky; */
+    top: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title-area{
-    text-align: center;
     padding: 1em;
+    height: fit-content;
+    width: fit-content;
 }
 
-#navigation ul{
+#nav-items{
+    padding: 1em;
+    height: fit-content;
+    width: fit-content;
+}
+
+#nav-items ul{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: gainsboro;
-    padding: 1em;
+    flex-direction: row;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.nav{
+/* Comienzo menú desplegable */
+
+#nav-items ul li{
+    position: relative;
+}
+
+#sub-menu1{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: none;
+}
+
+#sub-menu1 p{
+    padding-top: 0.5em;
+    text-align: center;
+    
+}
+
+#sub-menu1 p:hover{
+    background-color: royalblue;
+}
+
+
+/* Fin menú desplegable */
+
+.nav1{
     list-style-type: none;
     font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.nav2{
+    list-style-type: none;
+    font-size: 1.5em;
+    justify-content: center;
 }
 
 .lista-nav{
-    padding-right: 2em;
+    display: list-item;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.lista-nav:hover{
+    background-color:royalblue;
 }
 
 .lista-nav a{
@@ -35,26 +90,77 @@ header{
     transition: color .5s;
 }
 
-.lista-nav a:hover{
-    color: mediumorchid;
+ .lista-nav a:hover{
+    color: white;
 }
 
 .lista1_item a:visited{
     color: black;
 }
 
+/* Texto index */
+
+#title-index{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    padding: 0.2em;
+    font-weight: 500;
+    background-color: #6d54b3;
+    color: white;
+}
+
+#img-fisica2-container{
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+}
+
+#img-fisica2{
+    width: 100%;
+}
+
+#seccion-texto-fisica-2{
+    display: none;
+}
+
+#texto-fisica-2{
+    text-decoration: underline rgb(191, 230, 244) 15px;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0.8em;
+    margin-right: 0% !important;
+}
+
 #parrafo-home{
     padding: 1em;
+    background-color: rgb(255, 253, 238);
 }
 
 #tituloparrafo{
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+#tituloparrafo2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: 200;
+    padding-top: 0.5em;
 }
 
 .textohome-item{
     font-size: 1.5em;
     text-align: justify;
+    line-height: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .textohome{
@@ -62,32 +168,15 @@ header{
 }
 
 #fisica{
+    text-decoration: underline rgb(191, 230, 244) 15px;
     font-family: 'EB Garamond', serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 0 !important;
-    font-size: 2.5em;
+    font-size: 4em;
     text-transform: uppercase;
-    background:none;
-    outline: none;
-    border: none;
     width:fit-content;
-}
-
-  
-#fisica::after{
-    content: '';
-    height: 13px;
-    width: 100%;
-    background-color:rgb(191, 230, 244);
-    display: block;
-    border-radius: 50px;
-    margin-top: -8px;
-}
-
-.span{
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
 }
 
 .item{
@@ -95,32 +184,114 @@ header{
     width: fit-content;
 }
 
-.container-carousel{
-    height: fit-content;
-    width: fit-content;
+#lista-index{
+    margin-left: 3em;
 }
+
+#img-fisica5-container{
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+}
+
+#img-fisica5{
+    width: 100%;
+}
+
+#seccion-cosmic-eye{
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 2em;
+}
+
+#video-cosmic-eye-container{
+    text-align: center;
+    padding-top: 2em;
+}
+
+/* Comienzo menú hamburguesa */
+
+.respmenu input[type="checkbox"], .respmenu .bx-menu, .respmenu .bx-x {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .respmenu .bx-menu, .respmenu .bx-x {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .respmenu {
+    color: black;
+    position: relative;
+    min-height: 48px;
+    text-align: right;
+  }
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .bx-menu {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .bx-x {
+    display: none;
+  }
+
+/* Fin menú hamburguesa */
+
 
 /* Contacto */
 
-.section-contacto{
+#contacto{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1em;
-    font-weight: 100;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    padding: 0.2em;
+    font-weight: 500;
+    background-color: #6d54b3;
+    color: white;
 }
 
+#contacto-mensaje{
+    text-decoration: underline rgb(191, 230, 244) 15px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    font-weight: 100;
+} 
+
 .contenedor-contacto{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+.formulario-contacto{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
 #formulario{
-    max-width: 50%;
+    padding: 1em;
 }
 
 #nombre{
@@ -169,10 +340,158 @@ header{
     padding-top: 0.5em;
 }
 
+/* #img-fisica1-container{
+    max-width: 100%;
+    text-align: center;
+}
+
+#img-fisica1{
+    width: 100%;
+} */
+
+.video{
+    padding: 0.5em;
+    max-width: 100%;
+}
+
+#video-fisica{
+    width: 100%;
+}
+
+/* Estilos para problemas.html */
+
+.text-problemas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+#title-problems{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    padding: 0.2em;
+    font-weight: 500;
+    background-color: #6d54b3;
+    color: white;
+}
+
+.img-ejercicios-p{
+    padding: 1em;
+    margin: 1em;
+}
+
+#p-problems-container{
+    padding: 1em;
+    padding-right: 1.5em;
+}
+
+.p-problems{
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+#titulo-categ{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    padding: 0.2em;
+    font-weight: 100;
+    background-color: #6d54b3;
+    color: white;
+}
+
+#lista-categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#lista-categorias li{
+    list-style: none;
+    text-align: center;
+}
+
+#lista-categorias li a{
+    color: black;
+}
+
+#lista-categorias li a:hover{
+    color: gold;
+    background-color: rgb(6, 0, 42);
+}
+
+.categ-item{
+    text-decoration: none;
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'EB Garamond', serif;
+    background-color: lightblue;
+}
+
+.titulo-categ-pr{
+    font-size: 2.5em;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    font-family: 'Amatic SC', cursive
+}
+
+.pfo-seccion1-pr{
+    font-size: 20px;
+    padding: 0.5em;
+    line-height: 30px;
+}
+
+.img-seccion1-pr{
+    text-align: center;
+}
+
+.pfo-seccion2-pr{
+    font-size: 20px;
+    padding: 0.5em;
+    line-height: 30px;
+}
+
+.pfo-seccion3-pr{
+    font-size: 20px;
+    padding: 0.5em;
+    line-height: 30px;
+}
+
+.img-seccion3-pr{
+    text-align: center;
+}
+
+#img-fisica1-container{
+    max-width: 100%;
+    text-align: center;
+}
+
+#img-fisica1{
+    width: 100%;
+}
+
 /* Acá empieza el footer */
 
 .footer1{
-    background-color: #212529;
+    background-color:rgb(6, 0, 42);
 }
 
 .textfooter{
@@ -195,7 +514,7 @@ header{
 }
 
 .titulo_izq{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
     height: fit-content;
@@ -203,12 +522,13 @@ header{
 }
 
 .lista1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     padding-left: 1em;
     margin-top: 0;
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 2;
+
 }
 
 .lista1_item{
@@ -222,7 +542,7 @@ header{
 }
 
 .lista1_item a:hover{
-    color: mediumorchid !important;
+    color: gold !important;
 }
 
 .lista1_item a:visited{
@@ -237,7 +557,7 @@ header{
 }
 
 .titulo_centro{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
     height: fit-content;
@@ -245,12 +565,12 @@ header{
 }
 
 .lista2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     padding-left: 1em;
     margin-top: 0;
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .lista2_item{
@@ -264,7 +584,7 @@ header{
 }
 
 .lista2_item a:hover{
-    color: mediumorchid !important;
+    color: gold !important;
 }
 
 .lista2_item a:visited{
@@ -279,7 +599,7 @@ header{
 }
 
 .titulo_dcha{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
     height: fit-content;
@@ -287,13 +607,13 @@ header{
 }
 
 .lista3{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     list-style-type: none;
     padding-left: 1em;
     margin-top: 0;
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .lista3_item a{
@@ -303,7 +623,7 @@ header{
 }
 
 .lista3_item a:hover{
-    color:mediumorchid !important;
+    color: gold !important;
 }
 
 .lista3_item a:visited{
@@ -364,12 +684,12 @@ header{
     text-align: center;
 }
 
-.nav2{
+.nav2-footer{
     margin-top: 10px;
     margin-bottom: 0.5rem;
 }
 
-.nav2 li{
+.nav2-footer li{
     display: inline-block;
     list-style-type: none;
 }
@@ -387,7 +707,7 @@ header{
 }
 
 .textnav2 a:hover{
-    color: mediumorchid !important;
+    color: gold !important;
 }
 
 .textnav2 a:visited{

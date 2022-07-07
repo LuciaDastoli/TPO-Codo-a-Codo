@@ -4,96 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="imagenes/favicon_io/favicon-32x32.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Amatic+SC&family=Architects+Daughter&family=Cinzel&family=EB+Garamond&family=Handlee&family=Indie+Flower&family=Kalam:wght@300&family=Quicksand:wght@300&family=Shadows+Into+Light&family=Tillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/celular.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/compu.css">
+   
     <title>Física para todos</title>
+    <script>
+    function ver (n) {
+        document.getElementById("sub-menu1").style.display="block";
+    }
+    function ocultar (n) {
+        document.getElementById("sub-menu1").style.display="none";
+    }
+    </script>
 </head>
 <body>
     <header>
-            <div class="title-area">  
-                <a href="index.html"> <img src="imagenes/logo tp.png" alt="Logo Física para todos" height="150vh" width="150vw"> </a>  
+        <nav>
+            <div class="container">
+                <div class="title-area">  
+                    <a href="index.html"> <img id="img-logo" src="imagenes/logo tp 2.png" alt="Logo Física para todos" height="200vh" width="200vw"> </a>  
+                </div>
+                
+                <div id="nav-items">
+                    <div class="respmenu">
+                        <input type="checkbox" id="check">
+                        <i class='bx bx-menu'></i>
+                        <i class='bx bx-x'></i>
+                        <nav id="nav-principal">
+                            <ul class="nav1">
+                                <li class="lista-nav" id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)"> <a href="#">Temas</a> 
+                                    <div id="sub-menu1">
+                                        <p> <a href="#"> Mecánica clásica </a> </p>
+                                        <p> <a href="#"> Electromagnetismo </a> </p>
+                                        <p> <a href="#"> Termodinámica y estadística </a> </p>
+                                        <p> <a href="#"> Relatividad </a> </p>
+                                        <p> <a href="#"> Mecánica cuántica </a> </p>
+                                        <p> <a href="#"> Astronomía </a> </p>
+                                        <p> <a href="#"> Fluidos y medios continuos </a> </p>
+                                        <p> <a href="#"> Óptica </a> </p>
+                                        <p> <a href="#"> Física de partículas </a> </p>
+                                        <p> <a href="#"> Historia de la Física </a> </p>
+                                     </div>
+                                </li>
+                                <li class="lista-nav" id="seccion2"> <a href="#">Diccionario</a> </li>
+                                <li class="lista-nav" id="seccion3"> <a href="#">Foros</a> </li>
+                                <li class="lista-nav" id="seccion4"> <a href="#">Noticias</a> </li>
+                                <li class="lista-nav" id="seccion5"> <a href="problemas.html">Problemas</a> </li>
+                            </ul>
+                                <ul class="nav2">
+                                    <li class="lista-nav"> <a href="#">Registro</a> </li>
+                                    <li class="lista-nav"> <a href="#">Iniciar sesión</a> </li>
+                                </ul>
+                        </nav>
+
+                    </div>
+                </div>
             </div>
-    
-            <div id="navigation">
-                <nav>
-                    <ul class="nav">
-                        <li class="lista-nav"> <a href="#">Registro</a> </li>
-                        <li class="lista-nav"> <a href="#">Diccionario</a> </li>
-                        <li class="lista-nav"> <a href="#">Temas</a> </li>
-                        <li class="lista-nav"> <a href="#">Foros</a> </li>
-                        <li class="lista-nav"> <a href="#">Noticias</a> </li>
-                        <li class="lista-nav"> <a href="#">Problemas</a> </li>
-                        <li class="lista-nav"> <a href="#">Iniciar sesión</a> </li>
-                    </ul>
-                </nav>
-            </div>
+        </nav>
     </header>
 
     <main>
-        <span class="span">
-            <h2 id="fisica"> ¡Aprendé Física de forma fácil y divertida! </h2>
-        </span>
-            
-        <section id="carousel">
-            <div class="container-carousel">  
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                  </ol>
-              
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="imagenes/fisica1.jpg" alt="Ecuaciones" style="width:100%;">
-                    </div>
-              
-                    <div class="item">
-                      <img src="imagenes/fisica2.jpg" alt="Calculadora" style="width:100%;">
-                    </div>
-                  
-                    <div class="item">
-                      <img src="imagenes/fisica3.jpg" alt="Dualidad onda-partícula" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="imagenes/fisica4.jpg" alt="Péndulo de Newton" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="imagenes/fisica5.jpg" alt="Ecuación de Einstein" style="width:100%;">
-                      </div>
-                  </div>
-              
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
+        <section>
+            <h1 id="title-index"> ¡Bienvenido a Física para todos! </h1>
         </section>
 
+        <section id="img-fisica2-container">
+            <img id="img-fisica2" src="imagenes/fisica2.jpg" alt="Ejercicios">
+            <div id="fisica"> <p> ¡Aprendé Física <br> de forma fácil y <br> divertida!  </p> </div>
+        </section>
 
+        <section id="seccion-texto-fisica-2">
+            <div id="texto-fisica-2"> <p> ¡Aprendé Física de forma fácil y divertida! </p> </div>
+        </section>
+            
         <section id="parrafo-home">
             <h1 id="tituloparrafo"> ¿QUÉ ES LA FÍSICA? </h1>
            <div class="textohome">
-            <p class="textohome-item"> La física es una ciencia natural que estudia el funcionamiento del universo, desde el movimiento de la materia por el espacio y el tiempo, hasta la energía y la fuerza. Esta apasionante disciplina, que utiliza el método científico para descubrir los principios básicos que gobiernan la materia, existe para ayudarnos a darle sentido a todo lo que nos rodea. </p>
-            <p class="textohome-item"> La física, en su intento de describir los fenómenos naturales con exactitud y veracidad, ha llegado a límites impensables: el conocimiento actual abarca desde la descripción de partículas fundamentales microscópicas hasta el nacimiento de las estrellas en el universo e incluso el poder conocer con una gran probabilidad lo que aconteció en los primeros instantes del nacimiento de nuestro universo, por citar unos pocos campos. La física es tal vez la más antigua de todas las disciplinas académicas y contribuye directamente a muchas otras disciplinas. En arquitectura, por ejemplo, la física forma parte de los estudios de acústica, iluminación, calentamiento y estabilidad estructural. La geología requiere de la física para el análisis de terremotos. La biofísica es un híbrido de la biología y la física. Y en medicina, la física está presente en métodos de diagnóstico como los rayos X, la resonancia magnética y el ultrasonido. También lo está en tratamientos como la radioterapia.</p>
-            <p class="textohome-item"> Los avances en física a menudo permiten avances en nuevas tecnologías. Por ejemplo, los avances en la comprensión del electromagnetismo, la física del estado sólido y la física nuclear llevaron directamente al desarrollo de nuevos productos que han transformado drásticamente la sociedad actual, como la televisión, las computadoras, los electrodomésticos y las armas nucleares; los avances en termodinámica llevaron al desarrollo de la industrialización y los avances en mecánica inspiraron el desarrollo del cálculo. </p>
-           </div>
+            <p class="textohome-item"> La física es la ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo. </p>
+            <p class="textohome-item"> La física es una de las disciplinas académicas más antiguas, cuyas raíces se remontan a los inicios de la civilización, cuando el hombre empezó a tratar de entender las fuerzas que regían el mundo a su alrededor. </p>
+            <p class="textohome-item"> Se trata de una disciplina tanto teórica (describe las leyes del universo) como experimental (pone en práctica las hipótesis respecto a dichas leyes) y se adhiere al modelo de comprobación y legitimación impulsado por el método científico. Es una de las ciencias fundamentales o centrales que existen, y dentro de su campo de estudio convergen a menudo la química, la biología y la electrónica, entre otras. </p>
+            <p class="textohome-item"> Inicialmente la física formaba parte, como tantas otras ciencias, de la filosofía o la filosofía natural de la antigüedad, pero a partir de la Revolución Científica del siglo XVII surgió como un campo independiente, interesado en las leyes fundamentales de la realidad y empleando el lenguaje formal de las matemáticas para expresarlas. En la actualidad, la física es una de las disciplinas que más contribuye con el cambio del paradigma científico, industrial y tecnológico.  </p>
+            <p class="textohome-item"> La física como la conocemos hoy se describe mediante cuatro marcos teóricos que dependen del tamaño de la materia en estudio y de la velocidad de su movimiento. Estos son: </p>
+            <ul id="lista-index">
+                <li class="textohome-item"> <strong>Mecánica clásica.</strong> Se ocupa de los movimiento perceptibles en cuerpos macroscópicos, cuyas velocidades son muy pequeñas en comparación con la velocidad de la luz. </li>
+                <li class="textohome-item"> <strong>Mecánica relativista.</strong> Sustentada en los desarrollos teóricos de Albert Einstein durante el siglo XX, se asemeja a la clásica en su carácter determinista. Sin embargo, la mecánica relativista describe fenómenos que se encuentran dentro del marco de la teoría de la relatividad especial, que describe el comportamiento de los cuerpos que se mueven a velocidades cercanas a la de la luz, y de la teoría de la relatividad general, que es una formulación teórica para el campo gravitatorio (gravedad).  </li>
+                <li class="textohome-item"> <strong>Mecánica cuántica.</strong> Estudia sistemas de muy pequeña escala, como los átomos y las partículas elementales. Describe sus interacciones mediante las tres fuerzas que imperan a estas escalas: la fuerza fuerte, débil y electromagnética. </li>
+                <li class="textohome-item"> <strong>Teoría cuántica de campos.</strong> Es un formalismo matemático para describir la mecánica cuántica tratando a las partículas como campos. Resulta muy útil, por ejemplo, a la hora de estudiar el campo electromagnético. En la mecánica cuántica, se describe al campo electromagnético como un conjunto de partículas elementales llamadas fotones. La teoría cuántica de campos, por otra parte, lo trata como un sistema de campos continuos. </li>
+            </ul>
+            </div>
+        </section>
+
+        <section id="img-5-container">
+            <img id="img-fisica5" src="imagenes/fisica5.jpg" alt="Ecuación Einstein">
+        </section>
+
+        <section id="seccion-texto-index">
+            <h1 id="tituloparrafo2"> ¿QUÉ ESTUDIA LA FÍSICA? </h1>
+            <div class="textohome">
+                <p class="textohome-item"> La física se ocupa de las leyes fundamentales del universo, es decir, de entender y describir la mecánica con la que el universo opera. Estas leyes se describen mediante cuatro interacciones fundamentales:</p>
+                <ul id="lista-index">
+                    <li class="textohome-item"> <strong>Gravedad.</strong> La fuerza de atracción existente entre dos o más cuerpos masivos (que tienen masa). Cuanto más masivos son los cuerpos, más intensa es la fuerza y más alcance tiene su efecto. </li>
+                    <li class="textohome-item"> <strong>Electromagnetismo.</strong> La fuerza de atracción o repulsión que se manifiesta entre partículas cargadas eléctricamente.  </li>
+                    <li class="textohome-item"> <strong>Fuerzas nucleares débiles.</strong> También llamada interacción débil, es una fuerza que existe entre partículas fundamentales, es de muy corto alcance y es la responsable de los decaimientos atómicos y de la radiactividad. </li>
+                    <li class="textohome-item"> <strong>Fuerzas nucleares fuertes.</strong> Es una fuerza de atracción que mantiene unidos a los neutrones y los protones en el núcleo del átomo, venciendo la repulsión electromagnética entre estos últimos (cargados positivamente). </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="seccion-cosmic-eye">
+            <h1 id="tituloparrafo2"> COSMIC EYE </h1>
+            <p class="textohome-item"> Te dejamos la versión original en formato apaisado del cortometraje Cosmic Eye, diseñado por el astrofísico Danail Obreschkow. El video recorre todas las escalas conocidas del universo, desde las minúsculas partículas elementales hasta la gigantesca red cósmica. </p>
+            <div id="video-cosmic-eye-container">
+                <iframe id="video-cosmic-eye" width="560" height="315" src="https://www.youtube.com/embed/8Are9dDbW24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
@@ -117,7 +147,7 @@
                      <div class="lista2">
                          <ul>
                              <li class="lista2_item"> <a href="#"> Noticias </a> </li>
-                             <li class="lista2_item"> <a href="#"> Problemas </a> </li>
+                             <li class="lista2_item"> <a href="problemas.html"> Problemas </a> </li>
                              <li class="lista2_item"> <a href="#"> Foros </a> </li>
                          </ul>
                      </div>
@@ -146,7 +176,7 @@
             </div>
 
             <div class="site-footer">
-                <nav class="nav2">
+                <nav class="nav2-footer">
                     <ul>
                         <li class="textnav2"> <a href="#">Ayuda</a></li>
                         <li class="textnav2"> <a href="#">Aviso legal</a></li>
